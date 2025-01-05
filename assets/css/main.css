@@ -1,1 +1,54 @@
-main.css
+@font-face {
+    font-family: 'AmberAlertRegular';
+    src: url('../fonts/Tanseek Modern Pro Arabic Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AmberAlertBold';
+    src: url('../fonts/AlmarenaNeueDisplay-Bold-iF66afd734c41db.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --amberalert-purple: #E0A0F2;
+    --amberalert-darkGreen: #31594E;
+    --amberalert-green: #C7F29B;
+    --amberalert-text: #070607;
+    --amberalert-yellow: #EEF26D;
+    --amberalert-orange: #F2865E;
+    --amberalert-white: #FEFFFE;   
+/*    --amberalert-warning: #FFA000;
+    --amberalert-error: #D32F2F;*/
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: var(--amberalert-white);
+	font-family: 'AmberAlertRegular', Arial, sans-serif;
+    color: var(--amberalert-text);
+}
+
+.largeText{
+	font-family: 'AmberAlertBold', Arial, sans-serif;
+    color: var(--amberalert-text);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.normalText{
+	font-family: 'AmberAlertRegular', Arial, sans-serif;
+    color: var(--amberalert-text);
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.smallText{
+	font-family: 'AmberAlertRegular', Arial, sans-serif;
+    color: var(--amberalert-text);
+    font-size: 1rem;
+    font-weight: normal;
+}

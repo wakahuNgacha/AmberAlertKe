@@ -7,7 +7,7 @@
 
 		<div class='right'>
 			<div class="bigBox">
-				<img src="~/assets" alt="children"/>
+				<img src="" alt="children"/>
 			</div>
 		</div>	
 	</div>

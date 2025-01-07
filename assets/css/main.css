@@ -35,7 +35,7 @@ body{
 .largeText{
 	font-family: 'AmberAlertBold', Arial, sans-serif;
     color: var(--amberalert-text);
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -51,4 +51,26 @@ body{
     color: var(--amberalert-text);
     font-size: 1rem;
     font-weight: normal;
+}
+
+.primaryButton{
+    background-color: var(--amberalert-text);
+    width: fit-content;
+    height: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+
+.secondaryButton{
+    background-color: var(--amberalert-orange);
+    width: fit-content;
+    height: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
 }

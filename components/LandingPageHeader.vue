@@ -19,6 +19,9 @@
 </script>
 
 <style scoped>
+.left{
+	margin-right: 10px;
+}
 .holder{
 	width: 100%;
 	height: 70px;

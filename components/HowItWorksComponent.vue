@@ -44,12 +44,14 @@ function getRandomColor() {
     return colors[Math.floor(Math.random() * colors.length)];
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function applyRandomColors() {
     const boxes = document.querySelectorAll('.box');
     boxes.forEach(box => {
         box.style.backgroundColor = getRandomColor();
     });
-});
+}
+
+onMounted(applyRandomColors);
 </script>
 
 <style scoped>

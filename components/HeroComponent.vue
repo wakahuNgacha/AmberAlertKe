@@ -1,10 +1,21 @@
 <template>
 	<div class="holder">
 		<div class="left">
-			<span class="largeText">A Community Bringing Missing Loved Ones Home</span>
-			<span class="normalText">
-				AmberAlertKE is a Kenyan platform for public alerts on missing children. Our goal is to reunite families through community vigilance and timely action. Together, we can make a difference.
-			</span>
+			<div class="heroText">
+				<span class="largeText">A Community Bringing Missing Loved Ones Home</span>
+				<span class="normalText">
+					AmberAlertKE is a Kenyan platform for public alerts on missing children. Our goal is to reunite families through community vigilance and timely action. Together, we can make a difference.
+				</span>		
+			</div>
+
+			<div class="callToAction">
+				<div class="primaryButton">
+					<span>Donate</span>
+				</div>
+				<div class="secondaryButton">
+					<span>Join the Network</span>
+				</div>
+			</div>
 		</div>
 
 		<div class="right">
@@ -20,28 +31,27 @@
 </script>
 
 <style scoped>
-/* Fixed spelling errors and syntax issues */
 .holder {
-	width: 100%; /* Fixed 'widh' to 'width' */
+	width: 100%;
 	height: 100vh;
 	display: flex;
 }
 
 .left {
-	width: 50%; /* Fixed 'widh' to 'width' */
+	width: 50%;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	padding-left: 20px;
 	padding-right: 20px;
-	// justify-content: center;
+	/* justify-content: center; */
 	align-items: center;
 	text-align: center;
 	padding: 20px;
 }
 
 .right {
-	width: 50%; /* Fixed 'widh' to 'width' */
+	width: 50%;
 	height: 100%;
 	display: flex;
 	justify-content: center;
@@ -50,13 +60,11 @@
 
 .bigBox {
 	height: 90%;
-	width: 90%; /* Fixed 'widh' to 'width' */
-	border-radius: 20px; /* Fixed 'boderradious' to 'border-radius' */
-	background-color: var(--amberalert-darkGreen); /* Fixed 'backgroundcolor' to 'background-color' */
+	width: 90%;
+	border-radius: 20px;
+	background-color: var(--amberalert-darkGreen);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
 </style>
-

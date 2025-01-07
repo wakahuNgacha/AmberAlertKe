@@ -1,7 +1,7 @@
 <template>
 	<div class="holder">
 		<div class="left">
-			<span>Amber Alert KE</span>
+			<span class="logo">Amber Alert KE</span>
 		</div>
 
 		<div class="right">
@@ -23,6 +23,10 @@
 	width: 100%;
 	height: 70px;
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
+}
+.right{
+	display: flex;
 }
 </style>

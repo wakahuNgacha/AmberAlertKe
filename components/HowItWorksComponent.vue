@@ -35,7 +35,7 @@
 			</div>
 		</div
 	</div>
-</teplate>
+</template>
 
 <script setup>
 const colors = ["#F2865E", "#EEF26D", "#E0A0F2", "#C7F29B"];

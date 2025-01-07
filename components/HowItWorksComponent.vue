@@ -5,7 +5,7 @@
 				<div class="circle">
 					<span class="bigText">*</span>
 				</div>
-				<span class="smallText">Amber alert Ke is a community owned and lead program. We aim to have the community involved so that information on missing persons can be got and ussed as soon as posible</span> 
+				<span class="smallText">Amber alert Ke is a community owned and led program. We aim to have the community involved so that information on missing persons can be received and used as soon as possible.</span> 
 			</div>
 			<div class="right">
 				<span class="bigText"> This is how Amber Alert Ke Works </span>
@@ -20,7 +20,7 @@
 				<div class="callToAction"></div>
 			</div>
 
-			<div class="box" id="boxtwo">
+			<div class="box" id="boxTwo">
 				<div class="text"></div>
 				<div class="image"></div>
 				<div class="arrow"></div>
@@ -33,7 +33,7 @@
 				<div class="arrow"></div>
 				<div class="callToAction"></div>
 			</div>
-		</div
+		</div>
 	</div>
 </template>
 
@@ -63,7 +63,6 @@ window.onload = function() {
 .text{
 	display: flex;
 	height: 40vw;
-
 }
 .left{
 	width: 40%;
@@ -77,9 +76,9 @@ window.onload = function() {
 	align-items: center;
 	width: fit-content;
 	height: fit-content;
-	padding; 20px;
+	padding: 20px;
 	border-radius: 50%;
-	background-color: var(amberalert-darkGreen);
+	background-color: var(--amberalert-darkGreen);
 	color: var(--amberalert-green);
 	margin-bottom: 10px;
 }

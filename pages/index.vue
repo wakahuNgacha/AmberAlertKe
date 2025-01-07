@@ -1,3 +1,4 @@
 <template>
+	<LandingPageHeader/>
 	<HeroComponent/>
 </template>

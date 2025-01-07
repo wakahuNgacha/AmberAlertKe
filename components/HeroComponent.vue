@@ -44,8 +44,8 @@
 	flex-direction: column;
 	padding-left: 20px;
 	padding-right: 20px;
-	/* justify-content: center; */
-	align-items: center;
+	justify-content: center;
+	/* align-items: center; */
 	text-align: center;
 	padding: 20px;
 }
@@ -66,5 +66,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.callToAction{
+	display: flex;
+	width: 100%;
 }
 </style>

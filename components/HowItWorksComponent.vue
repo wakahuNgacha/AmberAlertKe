@@ -3,7 +3,7 @@
 		<div class="text">
 			<div class="left">
 				<div class="circle">
-					<span class="bigText">*</span>
+					<span class="largeText">*</span>
 				</div>
 				<span class="smallText">Amber alert Ke is a community owned and led program. We aim to have the community involved so that information on missing persons can be received and used as soon as possible.</span> 
 			</div>
@@ -66,6 +66,7 @@ onMounted(applyRandomColors);
 }
 .text{
 	display: flex;
+	align-items: center;
 	height: 50%;
 }
 .left{
@@ -73,6 +74,9 @@ onMounted(applyRandomColors);
 	display: flex;
 	flex-direction: column;
 	padding-right: 10%;
+}
+.right .largeText{
+	width: 60%;
 }
 .circle{
 	display: flex;
@@ -100,6 +104,6 @@ onMounted(applyRandomColors);
 	width: 300px;
 	margin: 10px;
 	border-radius: 20px;
-	background-color: var(--amberalert-green);
+	/* background-color: var(--amberalert-green); */
 }
 </style>

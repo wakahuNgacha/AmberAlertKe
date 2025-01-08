@@ -16,6 +16,11 @@
 					<span>Join the Network</span>
 				</div>
 			</div>
+			<div class="callToAction">
+				<NuxtLink to="/home" class="primaryButton">
+					<span>Missing persons</span>
+				</NuxtLink>
+			</div>
 		</div>
 
 		<div class="right">

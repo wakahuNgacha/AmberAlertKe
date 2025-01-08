@@ -52,30 +52,36 @@
 }
 .right{
     display: flex;
+    width: 50%;
     flex-direction: column;
+    padding:20px;
 }
 .heading{
     height:30%;
-    width: 100%;
+    width: 70%;
     padding-top: 20px;
     display: flex;
 }
 .details{
     height: 30%;
-    width: 100%;
+    width: 40%;
     padding-top: 20px;
 }
 .callToAction{
     height: 40%;
     display: flex;
-
+    justify-content: space-between;
 }
 .public{
-    background-color: var(--amberalert-darkGreen);
+    background-color: var(--amberalert-orange);
+    width: 49%;
+    height: 150px;
+    border-radius: 20px;
 }
-
 .coordinators{
     background-color: var(--amberalert-green);
+    width: 49%;
+    height:150px;
+    border-radius: 50px;
 }
-
 </style>

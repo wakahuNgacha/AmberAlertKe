@@ -57,7 +57,7 @@ onMounted(applyRandomColors);
 <style scoped>
 .holder{
 	width: 100%;
-	background-color: var(--amberalert-green);
+	/* background-color: var(--amberalert-green); */
 	padding-left: 10px;
     padding-right: 10px;
 	height: 100vh;

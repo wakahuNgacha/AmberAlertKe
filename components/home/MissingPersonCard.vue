@@ -1,8 +1,8 @@
 <template>
     <div class="cardHolder">
-        <div class="image">
+        <NuxtLink to="/missingPerson/1" class="image">
             <img src="" alt="">
-        </div>
+        </NuxtLink>
         <div class="text">
             <div class="top">
                 <div class="name">
@@ -24,6 +24,8 @@
 </template>
 
 <script setup>
+import { NuxtLink } from '#build/components';
+
 
 </script>
 

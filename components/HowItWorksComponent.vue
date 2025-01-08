@@ -8,7 +8,7 @@
 				<span class="smallText">Amber alert Ke is a community owned and led program. We aim to have the community involved so that information on missing persons can be received and used as soon as possible.</span> 
 			</div>
 			<div class="right">
-				<span class="bigText"> This is how Amber Alert Ke Works </span>
+				<span class="largeText"> This is how Amber Alert Ke Works </span>
 			</div>
 		</div>
 
@@ -76,8 +76,8 @@ onMounted(applyRandomColors);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: fit-content;
-	height: fit-content;
+	width: 20px;
+	height: 20px;
 	padding: 20px;
 	border-radius: 50%;
 	background-color: var(--amberalert-darkGreen);
@@ -86,10 +86,13 @@ onMounted(applyRandomColors);
 }
 .right{
 	width: 70%;
+	justify-content: center;
 }
 .box{
 	height: 200px;
-	width: 32%;
+	width: 31%;
+	margin: 10px;
 	border-radius: 20px;
+	background-color: var(--amberalert-green);
 }
 </style>

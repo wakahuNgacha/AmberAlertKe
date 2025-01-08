@@ -27,7 +27,7 @@
 
 </script>
 
-<style>
+<style scoped>
 .holder{
     width: 300px;
     height: 400px;

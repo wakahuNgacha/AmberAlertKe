@@ -82,6 +82,6 @@
     background-color: var(--amberalert-green);
     width: 49%;
     height:150px;
-    border-radius: 50px;
+    border-radius: 20%;
 }
 </style>

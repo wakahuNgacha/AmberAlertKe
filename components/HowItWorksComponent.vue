@@ -91,6 +91,7 @@ onMounted(applyRandomColors);
 	justify-content: start;
 	align-items: center;
 }
+.boxH
 .box{
 	height: 300px;
 	width: 300px;

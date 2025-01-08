@@ -15,7 +15,7 @@
             </div>
 
             <div class="details">
-                <span class="normalText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur at neque cupiditate debitis illo qui excepturi! Porro, neque magnam eos, omnis eum quas nisi quasi quaerat vero debitis dignissimos sequi!</span>
+                <span class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur at neque cupiditate debitis illo qui excepturi! Porro, neque magnam eos, omnis eum quas nisi quasi quaerat vero debitis dignissimos sequi!</span>
             </div>
 
         </div>
@@ -29,8 +29,8 @@
 
 <style scoped>
 .holder{
-    width: 300px;
-    height: 400px;
+    width: 32%;
+    height: 500px;
     border-radius: 20px;
     padding-top:5px;
     padding-left: 5px;
@@ -45,7 +45,7 @@
 }
 .image{
     height: 60%;
-    width: 90%;
+    width: 100%;
     background-color: blueviolet;
     border-radius: 20px;
 }

@@ -31,6 +31,10 @@ body{
 	font-family: 'AmberAlertRegular', Arial, sans-serif;
     color: var(--amberalert-text);
 }
+a{
+    all: unset;
+    cursor: pointer;
+}
 .logo{
     font-family: 'AmberAlertBold', Arial, sans-serif ;
     color: var(--amberalert-text);

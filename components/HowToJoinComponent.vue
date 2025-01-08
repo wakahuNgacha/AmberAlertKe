@@ -50,4 +50,32 @@
 	justify-content: center;
 	align-items: center;
 }
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    height:30%;
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+}
+.details{
+    height: 30%;
+    width: 100%;
+    padding-top: 20px;
+}
+.callToAction{
+    height: 40%;
+    display: flex;
+
+}
+.public{
+    background-color: var(--amberalert-darkGreen);
+}
+
+.coordinators{
+    background-color: var(--amberalert-green);
+}
+
 </style>

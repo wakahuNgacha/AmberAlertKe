@@ -62,6 +62,7 @@ onMounted(applyRandomColors);
     padding-right: 10px;
 	height: 100vh;
 	display: flex;
+	flex-direction: column;
 }
 .text{
 	display: flex;
@@ -91,8 +92,8 @@ onMounted(applyRandomColors);
 	align-items: center;
 }
 .box{
-	height: 200px;
-	width: 200px;
+	height: 300px;
+	width: 300px;
 	margin: 10px;
 	border-radius: 20px;
 	background-color: var(--amberalert-green);

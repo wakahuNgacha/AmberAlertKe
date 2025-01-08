@@ -66,7 +66,7 @@ onMounted(applyRandomColors);
 }
 .text{
 	display: flex;
-	height: 40vw;
+	height: 50%;
 }
 .left{
 	width: 40%;
@@ -91,7 +91,10 @@ onMounted(applyRandomColors);
 	justify-content: start;
 	align-items: center;
 }
-.boxH
+.boxHolder{
+	display: flex;
+	height: 50%
+}
 .box{
 	height: 300px;
 	width: 300px;

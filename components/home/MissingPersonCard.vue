@@ -1,5 +1,5 @@
 <template>
-    <div class="holder">
+    <div class="cardHolder">
         <div class="image">
             <img src="" alt="">
         </div>
@@ -28,7 +28,7 @@
 </script>
 
 <style scoped>
-.holder{
+.cardHolder{
     width: 32%;
     height: 500px;
     border-radius: 20px;
@@ -44,7 +44,7 @@
     align-items: center;
 }
 .image{
-    height: 60%;
+    height: 70%;
     width: 100%;
     background-color: blueviolet;
     border-radius: 20px;
@@ -52,7 +52,7 @@
 .text{
     display: flex;
     flex-direction: column;
-    height:40%;
+    height:30%;
     width: 90%;
     padding-left: 1%;
     padding-right: 1%;

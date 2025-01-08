@@ -57,6 +57,7 @@ onMounted(applyRandomColors);
 <style scoped>
 .holder{
 	width: 100%;
+	background-color: var(--amberalert-green);
 	padding-left: 10px;
     padding-right: 10px;
 	height: 100vh;
@@ -86,11 +87,12 @@ onMounted(applyRandomColors);
 }
 .right{
 	width: 70%;
-	justify-content: center;
+	justify-content: start;
+	align-items: center;
 }
 .box{
 	height: 200px;
-	width: 31%;
+	width: 200px;
 	margin: 10px;
 	border-radius: 20px;
 	background-color: var(--amberalert-green);

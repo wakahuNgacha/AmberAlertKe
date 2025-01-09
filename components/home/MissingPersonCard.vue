@@ -38,7 +38,7 @@
     padding-bottom:10px;
     margin: 5px;
     /* border: 1px solid var(--amberalert-text); */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
     z-index: 2px;
     display: flex;
     flex-direction: column;

@@ -82,19 +82,23 @@ a{
     border-radius: 20px;
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 .secondaryButton{
     background-color: var(--amberalert-orange);
     width: fit-content;
     height: fit-content;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 20px;
     margin-right: 10px;
     margin-left: 10px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 input {
@@ -118,4 +122,9 @@ textarea{
     background-color: var(--amberalert-white);
     border-radius: 8px;
     font-size: 1rem;
+}
+
+.asterisk{
+    width: 30px;
+    height: 30px;
 }

@@ -3,9 +3,9 @@
 		<div class="text">
 			<div class="left">
 				<div class="circle">
-					<span class="largeText">*</span>
+					<img class="asterisk" src="~/assets/images/asterisk.png" alt="asterisk">
 				</div>
-				<span class="smallText">Amber alert Ke is a community owned and led program. We aim to have the community involved so that information on missing persons can be received and used as soon as possible.</span> 
+				<span class="smallText"> The Amber Alert KE system has the potential to create a transformative impact in Kenya by fostering a proactive, community-driven approach to finding missing persons. Through collaboration with local coordinators and leveraging social media platforms like Twitter, WhatsApp, Facebook, and Instagram, the system ensures rapid information sharing and mobilization. </span> 
 			</div>
 			<div class="right">
 				<span class="largeText"> This is how Amber Alert Ke Works </span>
@@ -58,35 +58,37 @@ onMounted(applyRandomColors);
 .holder{
 	width: 100%;
 	/* background-color: var(--amberalert-green); */
-	padding-left: 10px;
-    padding-right: 10px;
+	padding-left: 20px;
+    padding-right: 20px;
+	margin-top: 20px;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
 .text{
 	display: flex;
-	align-items: center;
-	height: 50%;
+	/* align-items: center; */
+	height: 40%;
+	width: 100%;
 }
 .left{
 	width: 40%;
 	display: flex;
 	flex-direction: column;
-	padding-right: 10%;
+	margin-right: 10%;
 }
-.right .largeText{
-	width: 60%;
+.right{
+	width: 40%;
 }
 .circle{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 20px;
-	height: 20px;
-	padding: 20px;
+	width: 60px;
+	height: 60px;
+	/* padding: 5px; */
 	border-radius: 50%;
-	background-color: var(--amberalert-darkGreen);
+	background-color: var(--amberalert-green);
 	color: var(--amberalert-green);
 	margin-bottom: 10px;
 }
@@ -101,7 +103,7 @@ onMounted(applyRandomColors);
 }
 .box{
 	height: 300px;
-	width: 300px;
+	width: 400px;
 	margin: 10px;
 	border-radius: 20px;
 	/* background-color: var(--amberalert-green); */

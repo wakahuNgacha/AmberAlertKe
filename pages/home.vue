@@ -14,6 +14,9 @@ import MissingPersonCard from '~/components/home/MissingPersonCard.vue';
 <style scoped>
 .holder {
     display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to the next row if necessary */
+    flex-wrap: wrap;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 100px;
 }
 </style>

@@ -15,7 +15,7 @@
             </div>
 
             <div class="details">
-                <span class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur at neque cupiditate debitis illo qui excepturi! Porro, neque magnam eos, omnis eum quas nisi quasi quaerat vero debitis dignissimos sequi!</span>
+                <span class="normalText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur at neque cupiditate debitis illo qui excepturi! Porro, neque magnam eos, omnis eum quas nisi quasi quaerat vero debitis dignissimos sequi!</span>
             </div>
 
         </div>

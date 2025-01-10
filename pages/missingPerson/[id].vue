@@ -5,15 +5,20 @@
         </div>
         <div class="text">
             <div class="name">
-                <span>Name</span>
-                <span>Age: Gender: </span>
+                <span class="mediumText">Name</span>
+                <span class="normalText">Age: Gender: </span>
             </div>
             <div class="details">
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sint fuga et ab perspiciatis dicta illo aspernatur exercitationem totam iure! Itaque accusamus possimus, porro facilis repudiandae ad fuga eos laborum.</span>
+                <span class="normalText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sint fuga et ab perspiciatis dicta illo aspernatur exercitationem totam iure! Itaque accusamus possimus, porro facilis repudiandae ad fuga eos laborum.</span>
             </div>
             <div class="tip">
                 <form action="">
-                    <input type="text" name="" id="" placeholder="Have helpful info to help find them?">
+                    <textarea 
+                        id="messageBox" 
+                        placeholder="Have helpful info to help find them?" 
+                        maxlength="250"
+                        class="large-textarea"
+                    ></textarea>
 
                 </form>
             </div>
@@ -43,11 +48,13 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     padding: 20px;
 }
 .name{
     height: 20%;
+    display: flex;
+    flex-direction: column;
 }
 .details{
     height: 50%;

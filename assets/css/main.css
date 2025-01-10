@@ -49,17 +49,24 @@ a{
     font-weight: bold;
 }
 
+.mediumText{
+    font-family: 'AmberAlertBold', Arial, sans-serif;
+    color: var(--amberalert-text);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 .normalText{
 	font-family: 'AmberAlertRegular', Arial, sans-serif;
     color: var(--amberalert-text);
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: normal;
 }
 
 .smallText{
 	font-family: 'AmberAlertRegular', Arial, sans-serif;
     color: var(--amberalert-text);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: normal;
 }
 
@@ -88,4 +95,27 @@ a{
     border-radius: 20px;
     margin-right: 10px;
     margin-left: 10px;
+}
+
+input {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    border: 1px solid var(--amberalert-text);
+    background-color: var(--amberalert-white);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+textarea{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px; 
+    border: 1px solid var(--amberalert-text);
+    background-color: var(--amberalert-white);
+    border-radius: 8px;
+    font-size: 1rem;
 }

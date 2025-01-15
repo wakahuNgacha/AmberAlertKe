@@ -35,7 +35,7 @@
                     </div>
                     <span class="normalText">Be part a community coordinator</span>
                     <div class="bottom">
-                        <span>Want to join the community?</span>
+                        <span class="smallText">Want to join the community?</span>
                         <div class="arrow">
                             <UIcon name="i-ic:baseline-arrow-outward"/>
                         </div>	                        

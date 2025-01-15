@@ -154,8 +154,8 @@ onMounted(applyRandomColors);
 }
 .step{
 	width: fit-content;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 	padding-top: auto;
 	padding-bottom: auto;
 	border: 1px solid var(--amberalert-text);	

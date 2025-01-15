@@ -6,10 +6,10 @@
             </NuxtLink>
             <div class="user">
                 <div class="notification">
-                    <UIcon name="i-ic:baseline-notifications"/>
+                    <UIcon name="i-ic:baseline-notifications" class="icon"/>
                 </div>
                 <div class="profile">
-                    <UIcon name="i-ic:baseline-person"/>
+                    <UIcon name="i-ic:baseline-person" class="icon"/>
                 </div>
             </div>
         </div>
@@ -24,12 +24,12 @@
                 />
             </div>
             <div class="filter">
-                <UIcon name="i-ic:baseline-filter-list"/>
+                <UIcon name="i-ic:baseline-filter-list" class="icon"/>
                 <span class="normalText">filter</span>
             </div>
 
             <div class="sort">
-                <UIcon name="i-ic:sharp-import-export"/>
+                <UIcon name="i-ic:sharp-import-export"class="icon"/>
                 <span class="normalText">sort</span> 
             </div>
 
@@ -54,13 +54,16 @@ const searchQuery = ref('');
     position: fixed;
     background-color: var(--amberalert-white);
     top: 0;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    z-index: 3;
+    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); */
 }
 .top{
     height: 50px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* background-color: blueviolet; */
 }
 .user{
     display: flex;
@@ -89,8 +92,11 @@ const searchQuery = ref('');
 .bottom >*{
     display: flex;
     align-items: center;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.search{
+    width: 30%;
 }
 
 </style>

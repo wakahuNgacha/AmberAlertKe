@@ -17,6 +17,6 @@ import MissingPersonCard from '~/components/home/MissingPersonCard.vue';
     flex-wrap: wrap;
     padding-right: 20px;
     padding-left: 20px;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 </style>

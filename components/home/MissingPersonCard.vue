@@ -37,6 +37,7 @@
     padding-right:5px;
     padding-bottom:10px;
     margin: 5px;
+    margin-bottom: 20px;
     /* border: 1px solid var(--amberalert-text); */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
     z-index: 2px;

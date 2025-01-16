@@ -8,9 +8,9 @@
 			<div class="primaryButton">
 				<span>Donate</span>
 			</div>
-			<div class="secondaryButton">
+			<NuxtLink to="/signUp" class="secondaryButton">
 				<span>Join the Network</span>
-			</div>
+			</NuxtLink>
 		</div>
 	</div>
 </template>

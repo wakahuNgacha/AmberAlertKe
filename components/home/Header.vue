@@ -5,12 +5,12 @@
                 <span>Amber Alert Ke</span>
             </NuxtLink>
             <div class="user">
-                <div class="notification">
+                <NuxtLink to="/notification" class="notification">
                     <UIcon name="i-ic:baseline-notifications" class="icon"/>
-                </div>
-                <div class="profile">
+                </NuxtLink>
+                <NuxtLink to="/signUp" class="profile">
                     <UIcon name="i-ic:baseline-person" class="icon"/>
-                </div>
+                </NuxtLink>
             </div>
         </div>
 
@@ -39,6 +39,7 @@
 </template>
 
 <script setup>
+
 const searchQuery = ref('');
 </script>
 

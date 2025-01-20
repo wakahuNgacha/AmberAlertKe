@@ -1,4 +1,5 @@
 <template>
+    <BackComponent></BackComponent>
     <div class="holder">
         <div class="left">
             <div class="image">
@@ -33,6 +34,7 @@
 </template>
 
 <script setup>
+
 </script>
 
 <style scoped>

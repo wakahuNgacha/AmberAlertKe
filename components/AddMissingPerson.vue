@@ -1,5 +1,5 @@
 <template>
-    <div class="fullholder">
+    <div class="fullHolder">
         <div class="formHolder">
             <form action="">
                 <div class="form-group">
@@ -28,7 +28,7 @@
                         </div>
 
                         <div class="form-group">
-                            <button type="submit" class="primaryButton">Report Missing Person</button>
+                            <button type="submit" class="primaryButton" @click="addMissingPerson">Report Missing Person</button>
                         </div> 
             </form>
         </div>        
@@ -37,20 +37,65 @@
 </template>
 
 <script setup>
+const personName = ref('')
+const age = ref('')
+const lastSeen = ref('')
+const dateMissing = ref('')
+const contactInfo = ref('')
+
+const toast = useToast()
+
+const addMissingPerson = async() =>{
+    try{
+        const response = fetch('url',{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                personName: personName.value,
+                age: age.value,
+                lastSeen: lastSeen.value,
+                dateMissing: dateMissing.value,
+                contactInfo: contactInfo.value,
+            })
+        })
+        if(!response.ok){
+            console.log("an error occured")
+            toast.add({
+                title: 'Update downloaded.',
+                description: 'It will be installed on restart. Restart now?',
+            })
+        }else{
+            console.log("success")
+            toast.add({
+                title: 'Update downloaded.',
+                description: 'It will be installed on restart. Restart now?',
+            })
+        }
+
+    }
+    catch(error){
+        console.error('Error:', error.message);
+    }
+
+}
 </script>
 
 <style scoped>
 .fullHolder{
-    width: 100%;
+    width: 98%;
     height: 100vh;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 5;
+    background-color: var(--amberalert-white);
 }
 .formHolder{
-    width: 98%;
-    height:98%;
+    width: 80%;
+    height:90%;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -37,6 +37,44 @@
 </template>
 
 <script setup>
+
+const name = ref('')
+const email = ref('')
+const password = ref('')
+
+const toast = useToast()
+
+const login = async() =>{
+    try{
+        const response = fetch('url',{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: name.value,
+                email: email.value,
+                password: password.value,
+            })
+        })
+        if(!response.ok){
+            console.log("an error occured")
+            toast.add({
+                title: 'login up faild',
+                description: 'Something went wrong check your inputs and try again',
+            })
+        }else{
+            console.log("success")
+            toast.add({
+                title: 'login was succesful',
+                description: 'Welcome back to amber alert ke',
+            })
+        }
+    }
+    catch{
+        console.error('Error:', error.message);
+    }
+}
 </script>
 
 <style scoped>

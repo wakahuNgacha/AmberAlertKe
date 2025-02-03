@@ -30,6 +30,11 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="password_confirm" class="normalText">Password confirmation:</label>
+                        <input type="password" id="password_confirm" name="password_confirm" required>
+                    </div>
+
+                    <div class="form-group">
                         <button type="submit" class="primaryButton">
                             Sign up
                         </button>
@@ -56,6 +61,7 @@ const secondName = ref('')
 const surName = ref('')
 const email = ref('')
 const password = ref('')
+const password_confirm = ref('')
 
 const toast = useToast()
 
@@ -72,6 +78,7 @@ const signUp = async() => {
                 surName: surName.value,
                 email: email.value,
                 password: password.value,
+                password_confirm: password_confirm.value
             })
         })
         if(!response.ok){

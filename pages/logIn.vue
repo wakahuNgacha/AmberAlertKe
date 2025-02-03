@@ -10,11 +10,6 @@
                 <span class="mediumText">Log in</span>
                 <form action="">
                     <div class="form-group">
-                        <label for="name" class="normalText">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-
-                    <div class="form-group">
                         <label for="email" class="normalText">Email:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
@@ -37,8 +32,9 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig();
+const apiUrl = config.public.API_URL;
 
-const name = ref('')
 const email = ref('')
 const password = ref('')
 
@@ -46,13 +42,12 @@ const toast = useToast()
 
 const login = async() =>{
     try{
-        const response = fetch('url',{
+        const response = fetch(`${apiUrl}/user/`,{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                name: name.value,
                 email: email.value,
                 password: password.value,
             })

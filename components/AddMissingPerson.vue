@@ -3,33 +3,43 @@
         <div class="formHolder">
             <form action="">
                 <div class="form-group">
-                            <label for="personName">Person's Name:</label>
-                            <input type="text" id="personName" name="personName" required>
-                        </div>
+                    <label for="firstName">Person's First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
 
-                        <div class="form-group">
-                            <label for="age">Age:</label>
-                            <input type="number" id="age" name="age" required>
-                        </div>
+                <div class="form-group">
+                    <label for="secondName">Person's Second Name:</label>
+                    <input type="text" id="secondName" name="secondName" required>
+                </div>
 
-                        <div class="form-group">
-                            <label for="lastSeen">Last Seen Location:</label>
-                            <input type="text" id="lastSeen" name="lastSeen" required>
-                        </div>
+                <div class="form-group">
+                    <label for="sirName">Person's Sir Name:</label>
+                    <input type="text" id="sirName" name="sirName" required>
+                </div>
 
-                        <div class="form-group">
-                            <label for="dateMissing">Date Missing:</label>
-                            <input type="date" id="dateMissing" name="dateMissing" required>
-                        </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
 
-                        <div class="form-group">
-                            <label for="contactInfo">Your Contact Information:</label>
-                            <input type="email" id="contactInfo" name="contactInfo" required>
-                        </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <input type="text" id="gender" name="gender" required>
+                </div>
 
-                        <div class="form-group">
-                            <button type="submit" class="primaryButton" @click="addMissingPerson">Report Missing Person</button>
-                        </div> 
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <input type="text" id="description" name="description" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Your Contact Information:</label>
+                    <input type="text" id="status" name="status" required>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="primaryButton" @click="addMissingPerson">Report Missing Person</button>
+                </div> 
             </form>
         </div>        
     </div>
@@ -37,27 +47,36 @@
 </template>
 
 <script setup>
-const personName = ref('')
+const config = useRuntimeConfig();
+const apiUrl = config.public.API_URL;
+
+const firstName = ref('')
+const secondName = ref('')
+const surName = ref('')
 const age = ref('')
-const lastSeen = ref('')
-const dateMissing = ref('')
-const contactInfo = ref('')
+const gender = ref('')
+const description = ref('')
+const status = ref('')
+
+const image = ref('')
 
 const toast = useToast()
 
 const addMissingPerson = async() =>{
     try{
-        const response = fetch('url',{
+        const response = fetch(`${apiUrl}/user/`,{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                personName: personName.value,
+                firstName: firstName.value,
+                secondName: secondName.value,
+                surName: surName.value,
                 age: age.value,
-                lastSeen: lastSeen.value,
-                dateMissing: dateMissing.value,
-                contactInfo: contactInfo.value,
+                gender: gender.value,
+                description: description.value,
+                status: status.value,
             })
         })
         if(!response.ok){

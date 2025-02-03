@@ -5,8 +5,18 @@
                 <span class="mediumText">Sign Up</span>
                 <form action="">
                     <div class="form-group">
-                        <label for="name" class="normalText">Name:</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="firstName" class="normalText">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="secondName" class="normalText">Second Name:</label>
+                        <input type="text" id="secondName" name="secondName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="surName" class="normalText">Sur Name:</label>
+                        <input type="text" id="surName" name="surName" required>
                     </div>
 
                     <div class="form-group">
@@ -38,8 +48,12 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig();
+const apiUrl = config.public.API_URL;
 
-const name = ref('')
+const firstName = ref('')
+const secondName = ref('')
+const surName = ref('')
 const email = ref('')
 const password = ref('')
 
@@ -47,13 +61,15 @@ const toast = useToast()
 
 const signUp = async() => {
     try{
-        const response = fetch('url',{
+        const response = fetch(`${apiUrl}/user/`,{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                name: name.value,
+                firstName: firstName.value,
+                secondName: secondName.value,
+                surName: surName.value,
                 email: email.value,
                 password: password.value,
             })

@@ -1,4 +1,5 @@
 <template>
+    <BackComponent/>
     <div class="holder">
         <div class="left">
             <div class="imageBox">
@@ -114,11 +115,11 @@ const login = async() =>{
 }
 .form{
 	width: 60%;
-	height: 90%;
+	height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 	border-radius: 20px;
 	overflow: hidden;
     position: relative;   

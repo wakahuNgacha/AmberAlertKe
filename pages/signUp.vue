@@ -1,4 +1,5 @@
 <template>
+    <BackComponent/>
     <div class="holder">
         <div class="left">
             <div class="form">
@@ -14,10 +15,6 @@
                         <input type="text" id="secondName" name="secondName" required>
                     </div>
 
-                    <div class="form-group">
-                        <label for="surName" class="normalText">Sur Name:</label>
-                        <input type="text" id="surName" name="surName" required>
-                    </div>
 
                     <div class="form-group">
                         <label for="email" class="normalText">Email:</label>
@@ -109,6 +106,7 @@ const signUp = async() => {
 	display: flex;
 	padding-left: 20px;
 	padding-right: 20px;
+    /* background-color: aqua; */
 }
 
 .left {
@@ -119,17 +117,17 @@ const signUp = async() => {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+    /* background-color: blueviolet; */
 }
 .right {
 	width: 50%;
-	height: 100%;
+	height: 100;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .imageBox{
-    background-color: blueviolet;
 	width: 90%;
 	height: 90%;
 	border-radius: 20px;
@@ -144,21 +142,22 @@ const signUp = async() => {
 }
 .form{
 	width: 60%;
-	height: 90%;
+	height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 	border-radius: 20px;
 	overflow: hidden;
-    position: relative;   
+    position: relative;  
+    /* background-color: aqua;  */
 }
 form{
     width: 100%;
     padding: 10px;
 }
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: start;
